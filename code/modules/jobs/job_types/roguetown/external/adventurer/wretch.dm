@@ -675,9 +675,8 @@
 	H.change_stat("perception", 2)
 	H.change_stat("fortune", 1)
 	H.change_stat("speed", 1)
-
 	H.cmode_music = 'sound/music/combat_buccaneer.ogg'
-		GLOB.outlawed_players += H.real_name
+	GLOB.outlawed_players += H.real_name
 	var/my_crime = input(H, "What is your crime?", "Crime") as text|null
 	if (!my_crime)
 		my_crime = "crimes against the Crown"
